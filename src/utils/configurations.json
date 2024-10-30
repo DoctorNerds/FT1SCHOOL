@@ -1,0 +1,45 @@
+{
+    "informations": {
+        "2024": {
+            "stage": [
+                "01 - Goiânia",
+                "02 - Velo Città",
+                "03 - Interlagos",
+                "04 - Cascavel",
+                "05 - Velo Città",
+                "06 - Goiânia",
+                "07 - Belo Horizonte",
+                "08 - Velopark",
+                "09 - Buenos Aires",
+                "10 - El Pinar",
+                "11 - Cascavel",
+                "12 - Interlagos"
+            ],
+            "session": [
+                "SHAKE DOWN",
+                "FREE PRACTICE 1",
+                "FREE PRACTICE 2",
+                "FREE PRACTICE 3",
+                "QUALYFING",
+                "SPRINT RACE",
+                "MAIN RACE",
+                "TESTE PRE ETAPA",
+                "INICIAL"
+            ],
+            "measures": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "car_numbers": [
+                81,
+                91,
+                101,
+                111
+            ],
+            "measure_default": 4
+        }
+    }
+}
