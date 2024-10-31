@@ -5,7 +5,7 @@ import plotly.express as px
 import random
 
 
-# Configurações da página
+# Configura a página principal com título, layout em tela cheia e barra lateral expandida
 st.set_page_config(
     page_title="Aula Bônus",
     layout="wide",
@@ -83,7 +83,7 @@ st.plotly_chart(fig)
 
 # Mapa Interativo
 st.header("Mapa Interativo")
-# Coordenadas exatas da oficina em Vinhedo, SP (Rua São Miguel 210 - Jardim Primavera)
+# Coordenadas exatas da oficina em Vinhedo - SP
 map_data = pd.DataFrame({
     'lat': [-23.04350554279046],
     'lon': [-46.97885418114834]
@@ -108,7 +108,7 @@ if st.button("Exibir imagem da equipe da Fulltime Sports"):
     selected_image = random.choice(image_urls)
     st.image(selected_image, caption="Equipe Fulltime Sports", use_column_width=True)
 
-# Áudio e Vídeo
+# Exibir um Vídeo do Vlog
 st.header("Vídeo")
 st.write("Vlog Fulltime Sports")
 st.video("https://www.youtube.com/watch?v=jF1MpPcImf8")

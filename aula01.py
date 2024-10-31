@@ -3,6 +3,7 @@ from fpdf import FPDF
 from datetime import datetime
 import os
 
+# Configura a página principal com título, layout em tela cheia e barra lateral expandida
 st.set_page_config(
     page_title="Aula 01",
     layout="wide",
@@ -11,6 +12,24 @@ st.set_page_config(
 
 # Função para salvar as informações em um arquivo PDF
 def save_to_pdf(file_name, pilot_name, tire_choice, feedback, setup_changes, date, time, track_temp, asphalt_temp, outing_number, fuel_amount):
+    """Cria e salva um arquivo PDF com as informações fornecidas, incluindo detalhes sobre o piloto, configurações e feedback.
+
+    Args:
+        file_name (str): Nome do arquivo PDF a ser salvo.
+        pilot_name (str): Nome do piloto.
+        tire_choice (str): Tipo de pneu utilizado.
+        feedback (str): Comentários do piloto sobre a corrida.
+        setup_changes (str): Mudanças feitas no setup do carro.
+        date (datetime): Data da corrida.
+        time (datetime): Hora da corrida.
+        track_temp (int): Temperatura da pista em °C.
+        asphalt_temp (int): Temperatura do asfalto em °C.
+        outing_number (int): Número do outing (saída).
+        fuel_amount (int): Quantidade de combustível em litros.
+
+    Returns:
+        None
+    """
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)

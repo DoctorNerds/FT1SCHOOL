@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-# Configurações da página
+# Configura a página principal com título, layout em tela cheia e barra lateral expandida
 st.set_page_config(
     page_title="Aula 04",
     layout="wide",
@@ -15,6 +15,7 @@ data_kpis = pd.read_excel('./data/kpis.xlsx')
 # Seleção de abas na sidebar
 selected_tab = st.sidebar.selectbox("Selecione uma aba", ["Vitais", "Performance"])
 
+# Exibir o título selecionado
 st.title(selected_tab)
 
 if selected_tab == "Vitais":
@@ -30,7 +31,7 @@ if selected_tab == "Vitais":
         # Atualizar os rótulos dos eixos
         fig_vital.update_layout(
             yaxis_title='Temp. (°C)',  # Rótulo do eixo Y
-            xaxis_title='',             # Sem rótulo para o eixo X
+            xaxis_title='',            # Sem rótulo para o eixo X
         )
 
         # Exibir o gráfico

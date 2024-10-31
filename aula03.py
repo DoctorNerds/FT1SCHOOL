@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
-# Configurações da página
+# Configura a página principal com título, layout em tela cheia e barra lateral expandida
 st.set_page_config(
     page_title="Aula 03",
     layout="wide",

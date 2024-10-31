@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
 
+# Configura a página principal com título, layout em tela cheia e barra lateral expandida
 st.set_page_config(
     page_title="Aula 02",
     layout="wide",
@@ -75,6 +75,7 @@ with tab1:
     # Exibir gráfico
     st.plotly_chart(fig)
 
+# Dicionário para renomear as colunas
 column_names_map = {
     'Evo_Largada1': 'Evolução na Largada na Corrida 1',
     'Evo_PrePit_Corrida1': 'Evolução pré Pit Stop na Corrida 1',
@@ -127,4 +128,5 @@ with tab2:
             height=400,
             showlegend=False
         )
+        # Exibir gráfico
         st.plotly_chart(fig)
